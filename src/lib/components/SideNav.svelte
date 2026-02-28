@@ -1,5 +1,3 @@
-import { base } from '$app/paths';
-
 <script>
   import { base } from '$app/paths';
   import { createEventDispatcher } from 'svelte';
