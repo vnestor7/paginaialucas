@@ -1,6 +1,7 @@
 import { base } from '$app/paths';
 
 <script>
+  import { base } from '$app/paths';
   import { createEventDispatcher } from 'svelte';
   import { goto } from '$app/navigation';
   import { page } from '$app/stores';
