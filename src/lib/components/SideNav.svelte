@@ -1,3 +1,5 @@
+import { base } from '$app/paths';
+
 <script>
   import { createEventDispatcher } from 'svelte';
   import { goto } from '$app/navigation';
@@ -13,7 +15,10 @@
     { href: '/contacte', label: 'Contacte', icon: Mail, desc: 'Formulari i info' }
   ];
 
-  function nav(href){ goto(href); dispatch('navigate'); }
+function nav(href) {
+  goto(`${base}${href}`);
+  dispatch('navigate');
+}
 </script>
 
 <nav class="card nav">
